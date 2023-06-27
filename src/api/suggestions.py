@@ -19,12 +19,12 @@ class SuggestionList(Resource):
             "lat": {
                 "description": "Enter a latitude",
                 "type": "float",
-                "default": 39.5,  # geographic center of us
+                "default": 39.5,  # geographic center of USA
             },
             "long": {
                 "description": "Enter a longitude",
                 "type": "float",
-                "default": 98.35,  # geographic center of us
+                "default": 98.35,  # geographic center of USA
             },
         }
     )
