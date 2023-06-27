@@ -30,7 +30,7 @@ class SuggestionList(Resource):
     )
     def get(self):
         """Get a list of auto-complete suggestions based on parameters"""
-        return get_suggestions()
+        return get_suggestions(request)
 
 
 api.add_resource(SuggestionList, "")
