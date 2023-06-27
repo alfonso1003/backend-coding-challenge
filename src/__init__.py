@@ -1,14 +1,15 @@
 from flask import Flask
 
-from src.api import api_bp
 from src.extensions import db, ma
 
 
-def create_app() -> Flask:
+def create_app(script_info=None) -> Flask:
     app = Flask(__name__)
     app.config.from_object("src.config.DevelopmentConfig")
 
     register_extensions(app)
+
+    from src.api import api_bp
 
     app.register_blueprint(api_bp, url_prefix="/api")
 
