@@ -1,18 +1,13 @@
 from flask import Flask
+from flask_restx import Api, Resource
+
+from src.api import api_bp
 
 
-def create_app(script_info=None) -> Flask:
+def create_app() -> Flask:
     app = Flask(__name__)
     app.config.from_object("src.config.DevelopmentConfig")
 
-    from flask_restx import Api, Resource
-
-    api: Api = Api(app)
-
-    class Health(Resource):
-        def get(self):
-            return {"status": "OK", "message": "Server is running"}
-
-    api.add_resource(Health, "/health")
+    app.register_blueprint(api_bp, url_prefix="/api")
 
     return app
