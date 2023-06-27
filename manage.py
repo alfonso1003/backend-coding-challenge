@@ -1,7 +1,7 @@
 from flask.cli import FlaskGroup
 
 from src import create_app, db
-from src.suggestions.models import City  # type: ignore
+from src.cities.models import City  # type: ignore
 
 app = create_app()
 
