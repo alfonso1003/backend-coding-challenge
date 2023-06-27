@@ -17,7 +17,7 @@ class City(db.Model):
     )
 
     def __init__(
-        self, geoname_id: int, name: str, country_code: str, lat: int, long: int
+        self, geoname_id: int, name: str, country_code: str, lat: float, long: float
     ):
         self.geoname_id = geoname_id
         self.name = name
