@@ -1,5 +1,5 @@
 from src import ma
-from src.suggestions.models import City
+from src.cities.models import City
 
 
 class CitySchema(ma.SQLAlchemyAutoSchema):

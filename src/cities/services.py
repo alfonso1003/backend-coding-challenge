@@ -1,3 +1,3 @@
 from src import db
-from src.suggestions.models import City
-from src.suggestions.schemas import city_list_schema
+from src.cities.models import City
+from src.cities.schemas import city_list_schema
