@@ -1,6 +1,11 @@
 # Created by https://www.toptal.com/developers/gitignore/api/flask,macos,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=flask,macos,python
 
+
+# SQLite
+*.db
+
+# VS Code
 .vscode
 
 ### Flask ###
