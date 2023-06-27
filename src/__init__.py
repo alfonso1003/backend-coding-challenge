@@ -1,5 +1,4 @@
 from flask import Flask
-from flask_restx import Api, Resource
 
 from src.api import api_bp
 
