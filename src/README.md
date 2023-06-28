@@ -16,7 +16,7 @@ Navigate to http://127.0.0.1:5000/api/ and test things out. Enjoy!
 
 ## What Went Right
 
-I'm very happy with the architecture. I'm experimenting with Flask, SQLAlchemy, and Marshmallow and I'm pretty happy with the high level architecture.
+I'm very happy with the architecture. I'm experimenting with Flask, SQLAlchemy, and Marshmallow and I'm pretty happy with how that turned out.
 
 ## What Went Wrong
 
