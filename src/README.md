@@ -9,7 +9,10 @@ Create a virtual environment in your preferred method and install the `requireme
 ```
 $ python manage.py recreate_db
 $ python manage.py populate_cities_table
+$ python manage.py run
 ```
+
+Navigate to http://127.0.0.1:5000/api/ and test things out. Enjoy!
 
 ## What Went Right
 
