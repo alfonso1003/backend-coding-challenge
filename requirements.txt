@@ -4,4 +4,4 @@ flask-restx
 flask-sqlalchemy
 geoalchemy2
 marshmallow-sqlalchemy
-spatialite
+rapidfuzz
