@@ -3,6 +3,8 @@ from flask_restx import Namespace, Resource
 
 from src.cities.services import get_suggestions
 
+GEOGRAPHIC_CENTER_OF_US = {"latitude": 39.5, "longitude": 98.35}
+
 api = Namespace(
     "suggestions", description="Provide auto-complete suggestions for large cities"
 )
@@ -19,12 +21,12 @@ class SuggestionList(Resource):
             "lat": {
                 "description": "Enter a latitude",
                 "type": "float",
-                "default": 39.5,  # geographic center of USA
+                "default": GEOGRAPHIC_CENTER_OF_US["latitude"],
             },
             "long": {
                 "description": "Enter a longitude",
                 "type": "float",
-                "default": 98.35,  # geographic center of USA
+                "default": GEOGRAPHIC_CENTER_OF_US["longitude"],
             },
         }
     )
